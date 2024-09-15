@@ -134,7 +134,7 @@ def Function_All_Data_Prochista():
         print(data_text1,data_text2, data_text3)
         print(f"An error occurred: {e}")  
     finally:
-        print(data_text1,'\n',data_text2, '\n',data_text3) #print for Excel report
+        print(f"{data_text1}",f"\n{data_text2}",f"\n{data_text3}") #print for Excel report
         driver.quit()  
 
 # اجرای تابع  
