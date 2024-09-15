@@ -113,7 +113,7 @@ def Function_All_Data_Prochista():
             print(data_text1,data_text2, data_text3, data_text4)  
             print(f"An error occurred: {e}")  
     finally:
-        print(data_text1.strip(),"-",data_text2.strip(), '\n',data_text3.strip(),"-",data_text4.strip())  #print for Excel report
+        print(f"{data_text1}-{data_text2}",'\n'f"{data_text3}-{data_text4}")  #print for Excel report
         driver.quit()  
 
 Function_All_Data_Prochista()
