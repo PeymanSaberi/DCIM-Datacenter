@@ -231,7 +231,7 @@ def Function_All_Data_Prochista():
         
     finally:
         print("Af1",Af1, "\nTotalAv", TotalAv, "\nTotalAV", TotalAV, "\nTotalBP", TotalBP, "\nBf1", Bf1, "\nTotalBv",TotalBv, "\nTotalBV", TotalBV, "\nCP", Cp, "\nTotalCv",TotalCv, "\nTotalCV", TotalCV,"\nDP",Dp, "\nTotalDv",TotalDv, "\nTotalDV", TotalDV)
-        print(str(TotalAV).strip(),"-",str(TotalAv).strip(),"-",str(Af1).strip(),"-",str(TotalAP).strip(),'\n',str(TotalBV).strip(),"-",str(TotalBv).strip(),"-",str(Bf1).strip(),"-",str(TotalBP).strip(),'\n',str(TotalCV).strip(),"-",str(TotalCv).strip(),"-",str(Af1).strip(),"-",str(Cp).strip(),'\n',str(TotalDV).strip(),"-",str(TotalDv).strip(),"-",str(Af1).strip(),"-",str(Dp).strip())  # print for Excel report
+        print(f"{TotalAV}-{TotalAv}-{Af1}-{TotalAP}",'\n'f"{TotalBV}-{TotalBv}-{Bf1}-{TotalBP}",'\n'f"{TotalCV}-{TotalCv}-{Af1}-{Cp}",'\n'f"{TotalDV}-{TotalDv}-{Af1}-{Dp}")  # print for Excel report
         driver.quit()  # Ensure the driver is closed regardless of success or failure  
 
 # Call the main function  
