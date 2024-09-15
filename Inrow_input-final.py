@@ -389,15 +389,27 @@ def Function_Inrow_Collector():
         print("R Data:", r_data)  
         print("S Data:", s_data)
         #print for Excel report
-        print(r_data['r0'].strip(),"/",s_data['s0'].strip(),"/",f_data['f0'].strip(),'\n',r_data['r1'].strip(),"/",s_data['s1'].strip(),"/",f_data['f1'].strip(),'\n',r_data['r2'].strip(),"/",s_data['s2'].strip(),"/",
-              f_data['f2'].strip(),'\n',r_data['r3'].strip(),"/",s_data['s3'].strip(),"/",f_data['f3'].strip(),'\n',r_data['r4'].strip(),"/",s_data['s4'].strip(),"/",f_data['f4'].strip(),'\n',r_data['r5'].strip(),"/",
-              s_data['s5'].strip(),"/",f_data['f5'].strip(),'\n',r_data['r6'].strip(),"/",s_data['s6'].strip(),"/",f_data['f6'].strip(),'\n',r_data['r7'].strip(),"/",s_data['s7'].strip(),"/",
-              f_data['f7'].strip(),'\n',r_data['r8'].strip(),"/",s_data['s8'].strip(),"/",f_data['f8'].strip(),'\n',r_data['r9'].strip(),"/",s_data['s9'].strip(),"/",f_data['f9'].strip(),'\n',r_data['r10'].strip(),"/",
-              s_data['s10'].strip(),"/",f_data['f10'].strip(),'\n',r_data['r11'].strip(),"/",s_data['s11'].strip(),"/",f_data['f11'].strip(),'\n',r_data['r12'].strip(),"/",s_data['s12'].strip(),"/",f_data['f12'].strip(),
-              '\n',r_data['r13'].strip(),"/",s_data['s13'].strip(),"/",f_data['f13'].strip(),'\n',r_data['r14'].strip(),"/",s_data['s14'].strip(),"/",f_data['f14'].strip(),'\n',r_data['r15'].strip(),
-              "/",s_data['s15'].strip(),"/",f_data['f15'].strip(),'\n',r_data['r16'].strip(),"/",s_data['s16'].strip(),"/",f_data['f16'].strip(),'\n',r_data['r17'].strip(),"/",s_data['s17'].strip(),"/",f_data['f17'].strip(),
-              '\n',r_data['r18'].strip(),"/",s_data['s18'].strip(),"/",f_data['f18'].strip(),'\n',r_data['r19'].strip(),"/",s_data['s19'].strip(),"/",f_data['f19'].strip(),
-              '\n',r_data['r20'].strip(),"/",s_data['s20'].strip(),"/",f_data['f20'].strip())
+        print(f"{r_data['r0']}/{s_data['s0']}/{f_data['f0'].replace('%', '')}"
+             f"\n{r_data['r1']}/{s_data['s1']}/{f_data['f1'].replace('%', '')}"
+             f"\n{r_data['r2']}/{s_data['s2']}/{f_data['f2'].replace('%', '')}"
+             f"\n{r_data['r3']}/{s_data['s3']}/{f_data['f3'].replace('%', '')}"  
+             f"\n{r_data['r4']}/{s_data['s4']}/{f_data['f4'].replace('%', '')}"  
+             f"\n{r_data['r5']}/{s_data['s5']}/{f_data['f5'].replace('%', '')}"  
+             f"\n{r_data['r6']}/{s_data['s6']}/{f_data['f6'].replace('%', '')}"  
+             f"\n{r_data['r7']}/{s_data['s7']}/{f_data['f7'].replace('%', '')}"  
+             f"\n{r_data['r8']}/{s_data['s8']}/{f_data['f8'].replace('%', '')}"  
+             f"\n{r_data['r9']}/{s_data['s9']}/{f_data['f9'].replace('%', '')}"  
+             f"\n{r_data['r10']}/{s_data['s10']}/{f_data['f10'].replace('%', '')}"  
+             f"\n{r_data['r11']}/{s_data['s11']}/{f_data['f11'].replace('%', '')}"  
+             f"\n{r_data['r12']}/{s_data['s12']}/{f_data['f12'].replace('%', '')}"  
+             f"\n{r_data['r13']}/{s_data['s13']}/{f_data['f13'].replace('%', '')}"  
+             f"\n{r_data['r14']}/{s_data['s14']}/{f_data['f14'].replace('%', '')}"  
+             f"\n{r_data['r15']}/{s_data['s15']}/{f_data['f15'].replace('%', '')}"  
+             f"\n{r_data['r16']}/{s_data['s16']}/{f_data['f16'].replace('%', '')}"  
+             f"\n{r_data['r17']}/{s_data['s17']}/{f_data['f17'].replace('%', '')}"  
+             f"\n{r_data['r18']}/{s_data['s18']}/{f_data['f18'].replace('%', '')}"  
+             f"\n{r_data['r19']}/{s_data['s19']}/{f_data['f19'].replace('%', '')}"  
+             f"\n{r_data['r20']}/{s_data['s20']}/{f_data['f20'].replace('%', '')}")
     finally:  
         driver.quit()  # بستن مرورگر  
 
