@@ -73,6 +73,9 @@ def Function_All_Data_Prochista():
         A, B = map(float, [A, B])  
         KW = A + B  
         TotalA = (RA + RB + SA + SB + TA + TB) / 3  
+        E1 = RA + RB
+        E2 = SA + SB
+        E3 = TA + TB
 
         driver.execute_script("window.open('URL or IP  Address for report server', '_blank');")  
         time.sleep(17)  
@@ -90,7 +93,7 @@ def Function_All_Data_Prochista():
 
     finally:
         print("KW =", KW, "\ntotalA =", round(TotalA, 1), "\nRAB =", (RA + RB), "\nSAB=", (SA + SB), "\nTAB=", (TA + TB))
-        print(str(RA + RB).strip(),"/",str(SA + SB).strip(),"/",str(TA + TB).strip()) #print for Excel report
+        print(f"{E1}/{E2}/{E3}") #print for Excel report
         driver.quit()  
 
 Function_All_Data_Prochista()
