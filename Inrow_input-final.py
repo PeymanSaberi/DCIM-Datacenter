@@ -284,7 +284,7 @@ def Function_Inrow_Collector():
 
 
         #Input Inrow 15
-        destination_box = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '[id*="f1005_field15_Input3"]'))  ## you must set id field for input data
+        destination_box = WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.CSS_SELECTOR, '[id*="f1005_field15_Input3"]')))  ## you must set id field for input data
         time.sleep(3)
 
         # وارد کردن متن
